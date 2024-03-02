@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: #e1eff8; */
+  /* background-image: url("components/doct.jpg"); */
+  
+  
+  
+}
+
+.nav_ul li {
+  padding: 0 0.6rem;
+  
+}
+
+.nav_ul a {
+  font-size: 1.05rem;
+  color: #000  !important;
+  /* color: #000  ; */
+
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand {
+  color: #6da5ca;
+  font-weight: 600;
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+.btn1 {
+  border: 0;
+  padding: 0.5rem 1.8rem;
+  color: #9e0909;
+  background-color: #6da5ca;
+  text-decoration: none;
+  font-weight: 100px;
+  border-radius: 5%;
+  color: white;
+}
+
+.btn2 {
+  border: 0;
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+  background-color: #4CAF50;
+  text-decoration: none;
+  border-radius: 5%;
+}
+
+.Footer {
+  padding: 2rem 0;
+ margin-top: 15rem;
+}
+
+.ft-1 h3 {
+  font-weight: 700;
+  font-family: cursive;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
+}
+
+.ft-1 span {
+  color: #f60838;
+}
+
+.ft-1 p {
+  padding: 0rem 5rem 0.8rem 0;
+  font-weight: 500;
+}
+
+.footer-icons i {
+  padding: 0.4rem 0.5rem;
+  background: #e1e1e1;
+  color: #f60838;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+}
+
+.footer-icons i:hover {
+  background: #f60838;
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.Footer h5 {
+  color: #f60838;
+}
+
+.ft-2 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ft-2 ul li {
+  padding: 0.35rem 0;
+  font-weight: 500;
+}
+
+.ft-2 ul a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.06rem;
+}
+
+.ft-3 p {
+  font-weight: 500;
+  padding: 0.1rem 0;
+  font-size: 1.06rem;
+}
+
+.ft-3 i {
+  padding-right: 0.5rem;
+}
+
+.Last-footer {
+  background: rgb(126, 170, 228);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.Last-footer p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.page{
+display: inline-flex;
+list-style: none;
+}
+
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.inputContainer > .errorLabel {
+  color: red;
+  font-size: 12px;
+}
+
+.inputBox {
+  height: 48px;
+  width: 400px;
+  font-size: large;
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding-left: 8px;
+} 
