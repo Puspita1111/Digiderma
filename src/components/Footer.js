@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-lg-5 col-12 ft-1">
-                            <h3><span>DIGIDERM</span></h3>
+                            <h3><span>DIGIDERMA</span></h3>
                             <p>Early detection saves lives. Check your skin health now.
 Know your risk. Predict skin cancer with precision.
 Empowering prevention through predictive analysis.
@@ -32,7 +32,7 @@ Take control of your skin's future. Predict and prevent skin cancer today.</p>
                                 </li>
 
                                 <li className="nav-item">
-                                    <a className="" href="/">Services</a>
+                                    <a className="" href="/services">Services</a>
                                 </li>
                                 
                                 <li className="nav-item">
@@ -42,7 +42,7 @@ Take control of your skin's future. Predict and prevent skin cancer today.</p>
                             </ul>
                         </div>
                         <div className="col-md-6 col-lg-4 col-12 ft-3">
-                            <h5>Quick Links</h5>
+                            <h5>Contact</h5>
                             <p><i class="fa-solid fa-phone-volume"></i> 123456789</p>
                             <p><i class="fa-solid fa-envelope"></i> digiderma@gmail.com</p>
                             <p><i class="fa-solid fa-paper-plane"></i> India</p>
@@ -51,7 +51,7 @@ Take control of your skin's future. Predict and prevent skin cancer today.</p>
                 </div>
             </div>
             <div className='Last-footer'>
-                <p>Skin Cancer Prediction</p>
+                <p>©Digiderma</p>
             </div>
         </>
     )

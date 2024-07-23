@@ -1,0 +1,336 @@
+.hero{
+  display:flex;
+
+  	/* background: linear-gradient(90deg, #BE8CEF 0%, rgba(163, 208, 238, 0.83) 100%); */
+
+  
+}
+
+.hero-image{
+  max-width: 100%;
+  height: auto;
+  margin-top: 45px;
+  margin-right:2px;
+}
+/* .home{
+  background: linear-gradient(90deg, #BE8CEF 0%, rgba(163, 208, 238, 0.83) 100%);
+
+} */
+
+.hero-content{
+  
+  margin-left: none;
+  
+}
+
+.hero-heading{
+  color: rgb(65, 148, 208);
+  /* font-size: 70px; */
+  font-size: 60px;
+
+  font-family: 'Roboto', sans-serif;
+  /* margin:200px 0px 0px 100px; */
+  margin:50px 0px 0px 50px;
+
+  font-weight: bold;
+  margin-top: 100px;
+  
+  
+  
+}
+
+.hero-para{
+  margin-top: 30px;
+  font-size: 36px;
+  margin-left: 100px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.hero-para::after{
+  content: '|';
+  position: absolute;
+  right : 0;
+  background-color: white;
+  width:100%;
+  animation : typing 5s steps(24)  alternate infinite;
+}
+@keyframes typing{
+  to{
+    width:0%;
+  }
+}
+
+
+.hero-btn {
+    background-color: rgb(65, 148, 208);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width:210px;
+    margin-left: 100px;
+    border-radius: 7px;
+    font-family:'Roboto', sans-serif ;
+    font-weight:bold;
+
+  }
+  .hero-second-para{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 100px 0px 10px 100px;
+  }
+
+  /* benifitsection css */
+
+  .Benifit-Section{
+    display: flex;
+    height:300px;
+    margin-top: 100px;
+    /* background: linear-gradient(90deg, #BE8CEF 0%, rgba(163, 208, 238, 0.83) 100%); */
+
+   
+    
+  }
+
+  .First-Benifit{
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid ;
+    padding:0px 10px 50px 10px;
+    margin-right: 30px;
+    margin-left:225px;
+    border: 1px solid white ;
+   
+    background-color:white;
+    border-radius: 24px;
+    font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(90deg, #BE8CEF 0%, rgba(163, 208, 238, 0.83) 100%); */
+
+    
+   
+
+  }
+
+  .Second-Benifit{
+    max-width: 300px;
+    text-align: center;
+    margin-right: 50px;
+    border: 1px solid white ;
+    border-radius: 24px;
+    padding:0px 30px 50px 30px;
+    font-family: 'Roboto', sans-serif;
+    
+   
+
+  }
+
+  .Third-Benifit{
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid white ;
+    border-radius: 24px;
+    padding:0px 30px 50px 30px;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+
+  .heading{
+    color: rgb(7, 112, 188);
+    font-weight: bold;
+    font-family: 'Arial';
+    font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(90deg, #BE8CEF 0%, rgba(163, 208, 238, 0.83) 100%); */
+    /* font-size: 21px; */
+
+  }
+
+  .para{
+    font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(90deg, #BE8CEF 0%, rgba(163, 208, 238, 0.83) 100%); */
+
+
+  }
+
+  
+  /* reviewsection */
+
+ 
+  header1 {
+    /* background-image: url("images/png"); */
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    
+  }
+  
+  .container1 {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+  }
+  
+  .container__left1 h1 {
+    margin-bottom: 2rem;
+    font-size: 2.9rem;
+    font-weight:bold;
+    color:rgb(65, 148, 208) ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .container__left1 p {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    
+    
+  }
+  
+  .container__left1 button {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: rgb(65, 148, 208);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    
+  }
+  
+  .container__right1 {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .card1 {
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    .review{
+      color:rgb(65, 148, 208);
+      font-style: normal;
+      font-weight: bold;
+      text-align: right;
+      padding-right: 20px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+     
+    
+  }
+  
+  .card1 img {
+    max-width: 75px;
+    border-radius: 100%;
+  }
+  
+  .card__content1 {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .card__content1 span i {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .card__details1 p {
+    font-style: italic;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .card__details1 h4 {
+    text-align: right;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  @media (width < 1200px) {
+    .container1 {
+      gap: 3rem;
+    }
+  }
+  
+  @media (width < 900px) {
+    .container1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .container__right1 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (width < 750px) {
+    .container__right1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  /* main cta */
+  .MainCta{
+    /* background-color: #03b5d2; */
+    background: rgb(65, 148, 208);
+
+    padding: 110px;
+    margin-top: 110px;
+    height: 500px;
+  
+  }
+  .MainCtapara{
+    font-size:55px ;
+    font-family: 'Roboto', sans-serif;
+    color: #e5e5e5;
+    font-weight: bold;
+    margin-bottom: 0%;
+    text-align: center;
+    
+  }
+  .MainCtasecondpara{
+    font-size:35px ;
+    font-family: 'Roboto', sans-serif;
+    color: #e5e5e5;
+    text-align: center;
+  
+    
+  }
+  
+  .Ctabtn{
+    background-color:white;
+    border: none;
+    color:#03b5d2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width:350px;
+    margin-left: 360px;
+    border-radius: 7px;
+    font-family:'Roboto', sans-serif ;
+    font-weight:bold;
+    margin-top: 70px;
+    
+  }

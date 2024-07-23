@@ -1,47 +1,47 @@
-// Signup.js
 import React, { useState } from 'react';
+import axios from 'axios'; 
 
-const Signup = () => {
+const Login = () => {
   const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSignup = async (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
 
-    // Basic client-side validation
-    if (!username || !email || !password || password !== confirmPassword) {
-      setError('Please fill in all fields and ensure passwords match.');
+    
+    if (!username || !password) {
+      setError('Please enter both username and password.');
       return;
     }
 
-    // Simulate signup (replace this with your actual signup logic)
-    // For simplicity, we'll just show an alert for successful signup
-    alert('Signup successful!'); // Replace with actual navigation or state update
+    try {
+      
+      const response = await axios.post('amader django r login r url', {
+        username: username,
+        password: password
+      });
+
+      
+      alert(response.data.message);
+
+      
+    } catch (error) {
+      
+      setError('Invalid credentials. Please try again.');
+    }
   };
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.title}>Sign Up</h2>
-      <form onSubmit={handleSignup} style={styles.form}>
+      <h2 style={styles.title}>Login</h2>
+      <form onSubmit={handleLogin} style={styles.form}>
         <label>
-          Username:
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            style={styles.input}
-          />
-        </label>
-        <br />
-        <label>
-          Email:
+           Email:
           <input
             type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
             style={styles.input}
           />
         </label>
@@ -56,18 +56,8 @@ const Signup = () => {
           />
         </label>
         <br />
-        <label>
-          Confirm Password:
-          <input
-            type="password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            style={styles.input}
-          />
-        </label>
-        <br />
         <button type="submit" style={styles.button}>
-          Sign Up
+          Login
         </button>
         {error && <p style={styles.error}>{error}</p>}
       </form>
@@ -108,7 +98,8 @@ const styles = {
   error: {
     color: 'red',
     marginTop: '10px',
+    textAlign: 'center',
   },
 };
 
-export default Signup;
+export default Login;

@@ -50,19 +50,55 @@
   border-radius: 5%;
 }
 
+.active-link {
+  color: white !important;
+  background-color:#9bcef0 !important;
+}
+/* .active-link {
+  color: white !important;
+  background-color: blue !important;
+} */
+/* applogo */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+
+.blinking-image {
+  animation: blink 1s infinite;
+}
+
+
 .Footer {
   padding: 2rem 0;
  margin-top: 15rem;
 }
 
 .ft-1 h3 {
+  color: #f60838;
   font-weight: 700;
-  font-family: cursive;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: 2px;
-  padding: 0.5rem 0;
+  /* padding: 0.5rem 0; */
 }
 
 .ft-1 span {
+  /* color: #f60838; */
+  color: #000;
   color: #f60838;
 }
 
@@ -87,7 +123,13 @@
 }
 
 .Footer h5 {
+  /* color: black; */
   color: #f60838;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2px;
+  margin-top: 20px;
 }
 
 .ft-2 ul {
@@ -124,7 +166,8 @@
 
 .Last-footer p {
   margin-bottom: 0;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+  font-size: 10px;
   font-weight: 700;
 }
 .page{
